@@ -1,0 +1,21 @@
+---
+framework: jest
+preRun:
+  command:
+    - yarn install
+preMerge:
+  env:
+    NODE_ENV: test
+  pattern:
+    - "src/*/__tests__/*-test.js"
+    - "src/__tests__/*-test.js"
+postMerge:
+  env:
+      NODE_ENV: test
+  pattern:
+    - "src/*/__tests__/*-test.js"
+    - "src/__tests__/*-test.js"
+postRun:
+  command:
+    - yarn --version
+version: 1.0
