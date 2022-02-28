@@ -3,6 +3,7 @@ framework: jest
 preRun:
   command:
     - yarn install
+    - yarn run build
 preMerge:
   env:
     NODE_ENV: test
@@ -11,10 +12,11 @@ preMerge:
     - "src/__tests__/*-test.js"
 postMerge:
   env:
-      NODE_ENV: test
+    NODE_ENV: test
   pattern:
-    - "src/*/__tests__/*-test.js"
-    - "src/__tests__/*-test.js"
+    - "src/stores/__tests__/FluxStore-test.js"
+#     - "src/*/__tests__/*-test.js"
+#     - "src/__tests__/*-test.js"
 postRun:
   command:
     - yarn --version
