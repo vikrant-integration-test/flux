@@ -13,3 +13,4 @@ modulePathIgnorePatterns: [
   ],
 
 }
+module.exports = config;
