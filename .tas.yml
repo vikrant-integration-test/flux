@@ -4,6 +4,8 @@ preRun:
   command:
     - yarn install
     - yarn run build
+    - touch "/home/nucleus/repo/__tas/discovery.json"
+    - ls /home/nucleus/repo/__tas/
 preMerge:
   env:
     NODE_ENV: test
