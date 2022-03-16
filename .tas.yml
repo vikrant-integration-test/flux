@@ -20,4 +20,4 @@ postRun:
   command:
     - yarn --version
 version: 1.0
-configFile: scripts/jest/environment.js
+configFile: jest.config.js
