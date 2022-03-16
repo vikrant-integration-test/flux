@@ -4,6 +4,7 @@ preRun:
   command:
     - yarn install
     - yarn run build
+    - mkdir  "/home/nucleus/repo/__tas"
     - touch "/home/nucleus/repo/__tas/discovery.json"
     - ls /home/nucleus/repo/__tas/
 preMerge:
