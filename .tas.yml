@@ -6,6 +6,7 @@ preRun:
     - yarn run build
     - mkdir  "/home/nucleus/repo/__tas"
     - touch "/home/nucleus/repo/__tas/discovery.json"
+    - touch "/home/nucleus/repo/__tas/test_deps_map.json"
     - ls /home/nucleus/repo/__tas/
 preMerge:
   env:
