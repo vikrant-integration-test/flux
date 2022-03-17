@@ -17,9 +17,8 @@ postMerge:
   env:
     NODE_ENV: test
   pattern:
-    - "./src/stores/__tests__/FluxStore-test.js"
-#     - "src/*/__tests__/*-test.js"
-#     - "src/__tests__/*-test.js"
+    - "./**/__tests__/*-test.js"
+
 postRun:
   command:
     - yarn --version
